@@ -17,7 +17,7 @@ start cmd /k "echo This is the display window, go back to the first one to send 
 
 :loop
 set /p towrite=$ 
-echo #%user%# %towrite% | ncat.exe %ip% %port% -i 10
+echo #%user%# %towrite% | ncat.exe %ip% %port% -i 1ms
 goto :loop
 
 :server
